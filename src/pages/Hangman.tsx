@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Hangman() {
+const Hangman = () => {
   return (
     <div>
       <h2>Hangman</h2>
     </div>
   );
 }
+
+export default Hangman;

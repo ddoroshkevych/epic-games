@@ -4,17 +4,17 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
-import Hangman from "./games/Hangman";
-import Snake from "./games/Snake";
-import Tennis from "./games/Tennis";
+import Hangman from "./pages/Hangman";
+import Snake from "./pages/Snake";
+import Tennis from "./pages/Tennis";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Header />
       <hr />
       <Routes>
-        <Route exact path="/" element={<Main />} />
+        <Route path="/" element={<Main />}  />
         <Route path="/hangman" element={<Hangman />} />
         <Route path="/snake" element={<Snake />} />
         <Route path="/tennis" element={<Tennis />} />
